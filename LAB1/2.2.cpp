@@ -2,9 +2,8 @@
 #include <string.h>
 #include <stdlib.h>
 
-// ฟังก์ชัน reverse: กลับข้อความ str1 และคืนค่าผลลัพธ์เป็นสตริงใหม่
 char* reverse(char str1[]) {
-    int len = strlen(str1); // ความยาวของ str1
+    int len = strlen(str1); 
     char *reversed = (char *)malloc((len + 1) * sizeof(char)); // จองหน่วยความจำสำหรับผลลัพธ์
     if (reversed == NULL) {
         printf("Memory allocation failed.\n");
